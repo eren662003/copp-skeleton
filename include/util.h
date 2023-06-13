@@ -46,7 +46,7 @@ uint16_t read_uint16(uint8_t* buf) ;
 
 #if DEBUG_LEVEL >= 3 
 #define d3printf(...) \
-    fprintf(stderr,   _VA_ARGS__)
+    fprintf(stderr,   __VA_ARGS__)
 #else
 #define d3printf(...)
 #endif
